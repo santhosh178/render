@@ -26,4 +26,8 @@ public class UserController {
         public Iterable<User> findAllUsers() {
         return userRepository.findAll();
     }
+    @GetMapping("/hello")
+    public  String newUser() {
+        return "hello santhosh";
+    }
 }
