@@ -30,6 +30,6 @@ FROM openjdk:11-jdk-slim
 
 EXPOSE 8080
 
-COPY build/libs/springsan.jar app.jar
+COPY build/libs/*.jar springsan.jar
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "springsan.jar"]
